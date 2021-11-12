@@ -1,0 +1,74 @@
+|adder4b
+Cin => fulladd:add1.CIN
+X[0] => fulladd:add1.x
+X[1] => fulladd:add2.x
+X[2] => fulladd:add3.x
+X[3] => fulladd:add4.x
+Y[0] => fulladd:add1.y
+Y[1] => fulladd:add2.y
+Y[2] => fulladd:add3.y
+Y[3] => fulladd:add4.y
+S[0] <= fulladd:add1.s
+S[1] <= fulladd:add2.s
+S[2] <= fulladd:add3.s
+S[3] <= fulladd:add4.s
+Cout <= fulladd:add4.COUT
+Over <= Over.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4b|fulladd:add1
+CIN => s.IN0
+CIN => COUT.IN0
+CIN => COUT.IN0
+x => s.IN1
+x => COUT.IN0
+x => COUT.IN1
+y => s.IN1
+y => COUT.IN1
+y => COUT.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4b|fulladd:add2
+CIN => s.IN0
+CIN => COUT.IN0
+CIN => COUT.IN0
+x => s.IN1
+x => COUT.IN0
+x => COUT.IN1
+y => s.IN1
+y => COUT.IN1
+y => COUT.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4b|fulladd:add3
+CIN => s.IN0
+CIN => COUT.IN0
+CIN => COUT.IN0
+x => s.IN1
+x => COUT.IN0
+x => COUT.IN1
+y => s.IN1
+y => COUT.IN1
+y => COUT.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4b|fulladd:add4
+CIN => s.IN0
+CIN => COUT.IN0
+CIN => COUT.IN0
+x => s.IN1
+x => COUT.IN0
+x => COUT.IN1
+y => s.IN1
+y => COUT.IN1
+y => COUT.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+

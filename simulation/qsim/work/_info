@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/audre/Documents/ECE380/simulation/qsim
+vadder4a
+!s110 1633563555
+!i10b 1
+!s100 Z2hOVgn=?8OVUD_>BPmA=3
+IjeQl8DPQ66D>zP`30nGgK1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1633563554
+Z2 8Lab5.vo
+Z3 FLab5.vo
+Z4 L0 32
+Z5 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1633563555.000000
+Z6 !s107 Lab5.vo|
+Z7 !s90 -work|work|Lab5.vo|
+!i113 1
+Z8 o-work work
+vadder4a_vlg_vec_tst
+!s110 1633563556
+!i10b 1
+!s100 V<@?=>kcIBY[<[QO>3A<V0
+IWUcPKeVFkZAg8j8M5ZFNm2
+R1
+R0
+w1633563551
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+Z9 L0 30
+R5
+r1
+!s85 0
+31
+!s108 1633563556.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R8
+vadder4b
+Z10 !s110 1633650748
+!i10b 1
+!s100 =0H@HbUc_KB4:C0M1P2C_0
+IIXQH49F6@fSP31CDNcNRm1
+R1
+R0
+w1633650747
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1633650748.000000
+R6
+R7
+!i113 1
+R8
+vadder4b_vlg_vec_tst
+R10
+!i10b 1
+!s100 o9O9Yn;8?81gBn9IQ1[d40
+IH;OAXPh<<IznBS8QQ0ce_2
+R1
+R0
+w1633650744
+8WaveformB.vwf.vt
+FWaveformB.vwf.vt
+R9
+R5
+r1
+!s85 0
+31
+R11
+!s107 WaveformB.vwf.vt|
+!s90 -work|work|WaveformB.vwf.vt|
+!i113 1
+R8

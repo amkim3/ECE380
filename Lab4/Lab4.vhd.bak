@@ -1,0 +1,12 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+
+ENTITY lab4design1 IS
+	PORT ( a, b, c, d : IN STD_LOGIC ;
+			f : OUT STD_LOGIC) ;
+END lab4design1 ;
+
+ARCHITECTURE Behavior OF lab4design1 IS
+BEGIN
+f<= NOT ( (NOT(b AND b)) AND (NOT(d AND NOT(a AND a))) ;
+END Behavior;

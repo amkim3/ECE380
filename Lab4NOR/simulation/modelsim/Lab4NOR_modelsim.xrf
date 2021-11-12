@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/audre/Documents/Lab4NOR/Lab4NOR.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/audre/Documents/Lab4NOR/db/Lab4NOR.cbx.xml
+design_name = Lab4NOR
+instance = comp, \f~output , f~output, Lab4NOR, 1
+instance = comp, \b~input , b~input, Lab4NOR, 1
+instance = comp, \a~input , a~input, Lab4NOR, 1
+instance = comp, \d~input , d~input, Lab4NOR, 1
+instance = comp, \f~0 , f~0, Lab4NOR, 1
+instance = comp, \c~input , c~input, Lab4NOR, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Lab4NOR, 1

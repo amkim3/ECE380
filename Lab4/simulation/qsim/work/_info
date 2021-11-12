@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/audre/Documents/Lab4/simulation/qsim
+vLab4
+Z1 !s110 1633228060
+!i10b 1
+!s100 Qi5a:SJCUBM?L_5[bFn_c3
+I;LXLbkn]6CXnWz`HbD=Xd1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1633228059
+8Lab4.vo
+FLab4.vo
+L0 32
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z4 !s108 1633228060.000000
+!s107 Lab4.vo|
+!s90 -work|work|Lab4.vo|
+!i113 1
+Z5 o-work work
+n@lab4
+vLab4_vlg_vec_tst
+R1
+!i10b 1
+!s100 2c?DT9z;Vh6Ph`;^G[f4o2
+IJV;9e]Z37FAGTMYPC1?EO3
+R2
+R0
+w1633228056
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+n@lab4_vlg_vec_tst

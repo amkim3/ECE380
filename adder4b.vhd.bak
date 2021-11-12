@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY adder4b IS
+	PORT( Cin : IN STD_LOGIC;
+	X,Y : IN SIGNED(3 DOWNTO 0);
+	S : OUT SIGNED(3 DOWNTO 0);
+	Cout, Over: OUT STD_LOGIC);
+END adder4b;
+
+Architecture Behavior of adder4b IS
+	Signal Sum1,Sum2,Sum3,co1,co2,co3 : STD_LOGIC;
+Begin
+	
+End
