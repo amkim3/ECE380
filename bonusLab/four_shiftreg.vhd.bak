@@ -1,0 +1,44 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+
+entity four_shiftreg is
+    port (
+        CLK, CLR, RIN, LIN: in STD_LOGIC; 
+        S: in STD_LOGIC_VECTOR (2 downto 0); -- function select
+        D: in STD_LOGIC_VECTOR (3 downto 0); -- data in
+        Q: out STD_LOGIC_VECTOR (3 downto 0) -- data out
+    );
+end four_shiftreg;
+
+architecture Vshftreg_arch of Vshftreg is
+
+signal IQ: STD_LOGIC_VECTOR (7 downto 0);
+
+begin
+process (CLK, CLR, IQ)
+  begin
+    if (CLR='1') then IQ <= (others=>'0');   --- clear
+   elsif (CLK'event and CLK='1') then
+
+      case CONV_INTEGER(S) is  -- see the abovementioned function
+
+ -- If you don’t convert to integer,
+-- you can use when “000” and &…
+
+        when 0 => null;                         -- Hold
+        when 1 => IQ <= D;                      -- Load
+        when 2 => IQ <= RIN & IQ(7 downto 1);   -- Shift right
+        when 3 => IQ <= IQ(6 downto 0) & LIN;   -- Shift left
+        when 4 => IQ <= IQ(0) & IQ(7 downto 1); -- Shift circular right
+        when 5 => IQ <= IQ(6 downto 0) & IQ(7); -- Shift circular left
+        when 6 => IQ <= IQ(7) & IQ(7 downto 1); -- Shift arithmetic right
+        when 7 => IQ <= IQ(6 downto 0) & '0';   -- Shift arithmetic left
+        when others => null;
+      end case;
+    end if;
+
+    Q <= IQ;             -- Because IQ is internal signal, it can appear on both sides.
+
+  end process;
+end Vshftreg_arch;

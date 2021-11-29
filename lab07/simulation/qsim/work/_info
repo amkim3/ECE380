@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/audre/Documents/ECE380/lab07/simulation/qsim
 vflipflop
-Z1 !s110 1636756372
+Z1 !s110 1637554683
 !i10b 1
 !s100 TOLJO59IU1gdlLa4`7;a73
 IC`SJC1nhQH^GHBz0iELT50
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1636756361
+w1637554681
 8lab07.vo
 Flab07.vo
 L0 32
@@ -23,7 +23,7 @@ Z3 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1636756372.000000
+Z4 !s108 1637554683.000000
 !s107 lab07.vo|
 !s90 -work|work|lab07.vo|
 !i113 1
@@ -35,7 +35,7 @@ R1
 IiS4W@5MYnK6ej;[DbQGf@0
 R2
 R0
-w1636756359
+w1637554679
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 30

@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity full_adder is 
+	port(
+	A, B, Cin: in STD_LOGIC;
+	S, Cout : out STD_LOGIC);
+end entity;
+
+architecture logic of full_add is
+begin
+	process 
+		S <= A XOR B XOR CIN;
+		Cout <= (A AND B) OR (B AND C);
+	end process
+end architecture
+			
