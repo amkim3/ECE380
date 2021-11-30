@@ -9,7 +9,8 @@ end entity;
 
 architecture w_and_logic of w_and is
 begin
-	process
-		S <= (NOT active_low) AND active_high;
+	process(active_high, active_low)
+	begin
+		S <= (NOT active_low) AND active_high after 4 ns;
 	end process;
 end architecture;

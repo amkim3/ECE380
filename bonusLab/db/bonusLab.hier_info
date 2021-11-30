@@ -1,0 +1,115 @@
+|four_bit_adder
+in_a[0] => four_shiftreg:Asr.D[0]
+in_a[1] => four_shiftreg:Asr.D[1]
+in_a[2] => four_shiftreg:Asr.D[2]
+in_a[3] => four_shiftreg:Asr.D[3]
+in_b[0] => four_shiftreg:Bsr.D[0]
+in_b[1] => four_shiftreg:Bsr.D[1]
+in_b[2] => four_shiftreg:Bsr.D[2]
+in_b[3] => four_shiftreg:Bsr.D[3]
+control[0] => four_shiftreg:Asr.S[0]
+control[0] => four_shiftreg:Bsr.S[0]
+control[1] => four_shiftreg:Asr.S[1]
+control[1] => four_shiftreg:Bsr.S[1]
+control[1] => w_and:Fa_clock.active_low
+clk => four_shiftreg:Asr.CLK
+clk => four_shiftreg:Bsr.CLK
+clk => w_and:Fa_clock.active_high
+clk => dflipflop:Fa_dff.Clk
+reset_al => four_shiftreg:Asr.CLR
+reset_al => four_shiftreg:Bsr.CLR
+reset_al => dflipflop:Fa_dff.Reset
+sum[0] <= four_shiftreg:Asr.Q[0]
+sum[1] <= four_shiftreg:Asr.Q[1]
+sum[2] <= four_shiftreg:Asr.Q[2]
+sum[3] <= four_shiftreg:Asr.Q[3]
+carry <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|four_shiftreg:Asr
+CLK => IQ[0].CLK
+CLK => IQ[1].CLK
+CLK => IQ[2].CLK
+CLK => IQ[3].CLK
+CLR => IQ[0].ACLR
+CLR => IQ[1].ACLR
+CLR => IQ[2].ACLR
+CLR => IQ[3].ACLR
+RIN => Mux0.IN0
+LIN => Mux3.IN0
+S[0] => Mux0.IN2
+S[0] => Mux1.IN1
+S[0] => Mux2.IN1
+S[0] => Mux3.IN2
+S[1] => Mux0.IN1
+S[1] => Mux1.IN0
+S[1] => Mux2.IN0
+S[1] => Mux3.IN1
+D[0] => Mux3.IN3
+D[1] => Mux2.IN2
+D[2] => Mux1.IN2
+D[3] => Mux0.IN3
+Q[0] <= IQ[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= IQ[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= IQ[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= IQ[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|four_shiftreg:Bsr
+CLK => IQ[0].CLK
+CLK => IQ[1].CLK
+CLK => IQ[2].CLK
+CLK => IQ[3].CLK
+CLR => IQ[0].ACLR
+CLR => IQ[1].ACLR
+CLR => IQ[2].ACLR
+CLR => IQ[3].ACLR
+RIN => Mux0.IN0
+LIN => Mux3.IN0
+S[0] => Mux0.IN2
+S[0] => Mux1.IN1
+S[0] => Mux2.IN1
+S[0] => Mux3.IN2
+S[1] => Mux0.IN1
+S[1] => Mux1.IN0
+S[1] => Mux2.IN0
+S[1] => Mux3.IN1
+D[0] => Mux3.IN3
+D[1] => Mux2.IN2
+D[2] => Mux1.IN2
+D[3] => Mux0.IN3
+Q[0] <= IQ[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= IQ[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= IQ[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= IQ[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|w_and:Fa_clock
+active_high => S.IN0
+active_low => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|dflipflop:Fa_dff
+D => Q.IN0
+Clk => Qbar~reg0.CLK
+Clk => Q~reg0.CLK
+En => Q.IN1
+Reset => Qbar~reg0.PRESET
+Reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= Qbar~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|full_adder:adder
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

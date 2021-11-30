@@ -4,7 +4,7 @@ use IEEE.std_logic_unsigned.all;
 
 entity four_shiftreg is
     port (
-        CLK, CLR, RIN, LIN, Reset: in STD_LOGIC; 
+        CLK, CLR, RIN, LIN: in STD_LOGIC; 
         S: in STD_LOGIC_VECTOR (1 downto 0); -- function select
         D: in STD_LOGIC_VECTOR (3 downto 0); -- data in
         Q: out STD_LOGIC_VECTOR (3 downto 0) -- data out
