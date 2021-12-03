@@ -1,0 +1,247 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do bonusLab_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/dev2/ECE380/bonusLab/w_and.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:09:59 on Dec 02,2021
+# vcom -reportprogress 300 -93 -work work C:/dev2/ECE380/bonusLab/w_and.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity w_and
+# -- Compiling architecture w_and_logic of w_and
+# End time: 20:09:59 on Dec 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/dev2/ECE380/bonusLab/full_adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:09:59 on Dec 02,2021
+# vcom -reportprogress 300 -93 -work work C:/dev2/ECE380/bonusLab/full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture logic of full_adder
+# End time: 20:09:59 on Dec 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/dev2/ECE380/bonusLab/four_shiftreg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:09:59 on Dec 02,2021
+# vcom -reportprogress 300 -93 -work work C:/dev2/ECE380/bonusLab/four_shiftreg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity four_shiftreg
+# -- Compiling architecture Vshftreg_arch of four_shiftreg
+# End time: 20:09:59 on Dec 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/dev2/ECE380/bonusLab/bonusLab.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:09:59 on Dec 02,2021
+# vcom -reportprogress 300 -93 -work work C:/dev2/ECE380/bonusLab/bonusLab.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity four_bit_adder
+# -- Compiling architecture four_bit_adder_arch of four_bit_adder
+# End time: 20:09:59 on Dec 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/dev2/ECE380/bonusLab/dflipflop.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:09:59 on Dec 02,2021
+# vcom -reportprogress 300 -93 -work work C:/dev2/ECE380/bonusLab/dflipflop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dflipflop
+# -- Compiling architecture logic of dflipflop
+# End time: 20:09:59 on Dec 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+run
+# No Design Loaded!
+load bonusLab.vo
+# couldn't load library "bonusLab.vo": this library or a dependent library could not be found in library path
+pwd
+# C:/dev2/ECE380/bonusLab/simulation/modelsim
+vlog -reportprogress 300 -work work C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:13:40 on Dec 02,2021
+# vlog -reportprogress 300 -work work C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo 
+# -- Compiling module four_bit_adder
+# ** Warning: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(32): (vlog-13233) 'four_bit_adder' already exists and will be overwritten. Overwriting a VHDL entity with a Verilog module.
+# 
+# 
+# Top level modules:
+# 	four_bit_adder
+# End time: 20:13:40 on Dec 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.four_bit_adder
+# vsim work.four_bit_adder 
+# Start time: 20:14:40 on Dec 02,2021
+# Loading work.four_bit_adder
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(109): Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(125): Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(141): Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(157): Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(173): Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(189): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(200): Instantiation of 'cyclonev_clkena' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(214): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(225): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(236): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(247): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(258): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(269): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(280): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(291): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(302): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(313): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(339): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(350): Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(369): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(394): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(418): Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(437): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(462): Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(481): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(505): Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(524): Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(535): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(559): Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(578): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(603): Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(622): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(647): Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(666): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(691): Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(710): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(734): Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo(753): Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_adder File: C:/dev2/ECE380/bonusLab/simulation/modelsim/bonusLab.vo
+#         Searched libraries:
+#             C:/dev2/ECE380/bonusLab/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 20:14:40 on Dec 02,2021, Elapsed time: 0:00:00
+# Errors: 38, Warnings: 0

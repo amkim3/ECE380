@@ -19,11 +19,11 @@ clk => dflipflop:Fa_dff.Clk
 reset_al => four_shiftreg:Asr.CLR
 reset_al => four_shiftreg:Bsr.CLR
 reset_al => dflipflop:Fa_dff.Reset
-sum[0] <= four_shiftreg:Asr.Q[0]
-sum[1] <= four_shiftreg:Asr.Q[1]
-sum[2] <= four_shiftreg:Asr.Q[2]
-sum[3] <= four_shiftreg:Asr.Q[3]
-carry <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum[0] << four_shiftreg:Asr.Q[0]
+sum[1] << four_shiftreg:Asr.Q[1]
+sum[2] << four_shiftreg:Asr.Q[2]
+sum[3] << four_shiftreg:Asr.Q[3]
+carry << comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |four_bit_adder|four_shiftreg:Asr

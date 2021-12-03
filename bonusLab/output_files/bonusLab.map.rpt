@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bonusLab
-Mon Nov 29 16:38:06 2021
+Thu Dec 02 20:52:02 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 29 16:38:06 2021       ;
+; Analysis & Synthesis Status     ; Successful - Thu Dec 02 20:52:02 2021       ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                   ; bonusLab                                    ;
 ; Top-level Entity Name           ; four_bit_adder                              ;
@@ -155,34 +155,28 @@ agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; w_and.vhd                        ; yes             ; User VHDL File  ; C:/Users/audre/Documents/ECE380/bonusLab/w_and.vhd         ;         ;
-; full_adder.vhd                   ; yes             ; User VHDL File  ; C:/Users/audre/Documents/ECE380/bonusLab/full_adder.vhd    ;         ;
-; four_shiftreg.vhd                ; yes             ; User VHDL File  ; C:/Users/audre/Documents/ECE380/bonusLab/four_shiftreg.vhd ;         ;
-; bonusLab.vhd                     ; yes             ; User VHDL File  ; C:/Users/audre/Documents/ECE380/bonusLab/bonusLab.vhd      ;         ;
-; dflipflop.vhd                    ; yes             ; User VHDL File  ; C:/Users/audre/Documents/ECE380/bonusLab/dflipflop.vhd     ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                     ;
++----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path              ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
+; w_and.vhd                        ; yes             ; User VHDL File  ; C:/dev2/ECE380/bonusLab/w_and.vhd         ;         ;
+; full_adder.vhd                   ; yes             ; User VHDL File  ; C:/dev2/ECE380/bonusLab/full_adder.vhd    ;         ;
+; four_shiftreg.vhd                ; yes             ; User VHDL File  ; C:/dev2/ECE380/bonusLab/four_shiftreg.vhd ;         ;
+; bonusLab.vhd                     ; yes             ; User VHDL File  ; C:/dev2/ECE380/bonusLab/bonusLab.vhd      ;         ;
+; dflipflop.vhd                    ; yes             ; User VHDL File  ; C:/dev2/ECE380/bonusLab/dflipflop.vhd     ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -317,33 +311,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Nov 29 16:37:55 2021
+    Info: Processing started: Thu Dec 02 20:51:53 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bonusLab -c bonusLab
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
+    Info (12022): Found design unit 1: FSM-Behavior File: C:/dev2/ECE380/bonusLab/fsm.vhd Line: 9
+    Info (12023): Found entity 1: FSM File: C:/dev2/ECE380/bonusLab/fsm.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file w_and.vhd
-    Info (12022): Found design unit 1: w_and-w_and_logic File: C:/Users/audre/Documents/ECE380/bonusLab/w_and.vhd Line: 10
-    Info (12023): Found entity 1: w_and File: C:/Users/audre/Documents/ECE380/bonusLab/w_and.vhd Line: 4
+    Info (12022): Found design unit 1: w_and-w_and_logic File: C:/dev2/ECE380/bonusLab/w_and.vhd Line: 10
+    Info (12023): Found entity 1: w_and File: C:/dev2/ECE380/bonusLab/w_and.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhd
-    Info (12022): Found design unit 1: full_adder-logic File: C:/Users/audre/Documents/ECE380/bonusLab/full_adder.vhd Line: 10
-    Info (12023): Found entity 1: full_adder File: C:/Users/audre/Documents/ECE380/bonusLab/full_adder.vhd Line: 4
+    Info (12022): Found design unit 1: full_adder-logic File: C:/dev2/ECE380/bonusLab/full_adder.vhd Line: 10
+    Info (12023): Found entity 1: full_adder File: C:/dev2/ECE380/bonusLab/full_adder.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file four_shiftreg.vhd
-    Info (12022): Found design unit 1: four_shiftreg-Vshftreg_arch File: C:/Users/audre/Documents/ECE380/bonusLab/four_shiftreg.vhd Line: 14
-    Info (12023): Found entity 1: four_shiftreg File: C:/Users/audre/Documents/ECE380/bonusLab/four_shiftreg.vhd Line: 5
+    Info (12022): Found design unit 1: four_shiftreg-Vshftreg_arch File: C:/dev2/ECE380/bonusLab/four_shiftreg.vhd Line: 14
+    Info (12023): Found entity 1: four_shiftreg File: C:/dev2/ECE380/bonusLab/four_shiftreg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bonuslab.vhd
-    Info (12022): Found design unit 1: four_bit_adder-four_bit_adder_arch File: C:/Users/audre/Documents/ECE380/bonusLab/bonusLab.vhd Line: 13
-    Info (12023): Found entity 1: four_bit_adder File: C:/Users/audre/Documents/ECE380/bonusLab/bonusLab.vhd Line: 4
+    Info (12022): Found design unit 1: four_bit_adder-four_bit_adder_arch File: C:/dev2/ECE380/bonusLab/bonusLab.vhd Line: 13
+    Info (12023): Found entity 1: four_bit_adder File: C:/dev2/ECE380/bonusLab/bonusLab.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file dflipflop.vhd
-    Info (12022): Found design unit 1: dflipflop-logic File: C:/Users/audre/Documents/ECE380/bonusLab/dflipflop.vhd Line: 9
-    Info (12023): Found entity 1: dflipflop File: C:/Users/audre/Documents/ECE380/bonusLab/dflipflop.vhd Line: 4
+    Info (12022): Found design unit 1: dflipflop-logic File: C:/dev2/ECE380/bonusLab/dflipflop.vhd Line: 9
+    Info (12023): Found entity 1: dflipflop File: C:/dev2/ECE380/bonusLab/dflipflop.vhd Line: 4
 Info (12127): Elaborating entity "four_bit_adder" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at bonusLab.vhd(10): used implicit default value for signal "carry" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/audre/Documents/ECE380/bonusLab/bonusLab.vhd Line: 10
-Info (12128): Elaborating entity "four_shiftreg" for hierarchy "four_shiftreg:Asr" File: C:/Users/audre/Documents/ECE380/bonusLab/bonusLab.vhd Line: 51
-Info (12128): Elaborating entity "w_and" for hierarchy "w_and:Fa_clock" File: C:/Users/audre/Documents/ECE380/bonusLab/bonusLab.vhd Line: 53
-Info (12128): Elaborating entity "dflipflop" for hierarchy "dflipflop:Fa_dff" File: C:/Users/audre/Documents/ECE380/bonusLab/bonusLab.vhd Line: 54
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:adder" File: C:/Users/audre/Documents/ECE380/bonusLab/bonusLab.vhd Line: 55
+Warning (10541): VHDL Signal Declaration warning at bonusLab.vhd(10): used implicit default value for signal "carry" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/dev2/ECE380/bonusLab/bonusLab.vhd Line: 10
+Info (12128): Elaborating entity "four_shiftreg" for hierarchy "four_shiftreg:Asr" File: C:/dev2/ECE380/bonusLab/bonusLab.vhd Line: 51
+Info (12128): Elaborating entity "w_and" for hierarchy "w_and:Fa_clock" File: C:/dev2/ECE380/bonusLab/bonusLab.vhd Line: 53
+Info (12128): Elaborating entity "dflipflop" for hierarchy "dflipflop:Fa_dff" File: C:/dev2/ECE380/bonusLab/bonusLab.vhd Line: 54
+Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:adder" File: C:/dev2/ECE380/bonusLab/bonusLab.vhd Line: 55
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "carry" is stuck at GND File: C:/Users/audre/Documents/ECE380/bonusLab/bonusLab.vhd Line: 10
+    Warning (13410): Pin "carry" is stuck at GND File: C:/dev2/ECE380/bonusLab/bonusLab.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -352,9 +348,9 @@ Info (21057): Implemented 27 device resources after synthesis - the final resour
     Info (21059): Implemented 5 output pins
     Info (21061): Implemented 10 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5080 megabytes
-    Info: Processing ended: Mon Nov 29 16:38:06 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 5055 megabytes
+    Info: Processing ended: Thu Dec 02 20:52:02 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:17
 
 

@@ -1,0 +1,11 @@
+
+State Machine - |FSM|y
+Name y.Ready y.S4 y.S3 y.S2 y.S1 y.Load y.Reset y.Idle 
+y.Idle 0 0 0 0 0 0 0 0 
+y.Reset 0 0 0 0 0 0 1 1 
+y.Load 0 0 0 0 0 1 0 1 
+y.S1 0 0 0 0 1 0 0 1 
+y.S2 0 0 0 1 0 0 0 1 
+y.S3 0 0 1 0 0 0 0 1 
+y.S4 0 1 0 0 0 0 0 1 
+y.Ready 1 0 0 0 0 0 0 1 

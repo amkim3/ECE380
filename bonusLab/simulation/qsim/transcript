@@ -1,0 +1,29 @@
+# do bonusLab.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:02:19 on Dec 02,2021
+# vlog -work work FSM.vo 
+# -- Compiling module FSM
+# 
+# Top level modules:
+# 	FSM
+# End time: 21:02:20 on Dec 02,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:02:20 on Dec 02,2021
+# vlog -work work FSMWaveform.vwf.vt 
+# -- Compiling module FSM_vlg_vec_tst
+# 
+# Top level modules:
+# 	FSM_vlg_vec_tst
+# End time: 21:02:20 on Dec 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.FSM_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 21:02:20 on Dec 02,2021
+# Loading work.FSM_vlg_vec_tst
+# Loading work.FSM
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Note: $finish    : FSMWaveform.vwf.vt(49)
+#    Time: 160 ns  Iteration: 0  Instance: /FSM_vlg_vec_tst
+# End time: 21:02:20 on Dec 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

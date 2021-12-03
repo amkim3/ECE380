@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/dev2/ECE380/bonusLab/simulation/qsim
+vFSM
+Z1 !s110 1638500540
+!i10b 1
+!s100 [E_UPR00BRzZ2Ik]Vkhga1
+I^ZeM[KCPA0EI[>SPQOndN3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1638500539
+8FSM.vo
+FFSM.vo
+L0 32
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1638500539.000000
+!s107 FSM.vo|
+!s90 -work|work|FSM.vo|
+!i113 1
+Z4 o-work work
+n@f@s@m
+vFSM_vlg_vec_tst
+R1
+!i10b 1
+!s100 >nIgM0fb1T@h;NG_40jh?1
+I^mjoU23A2l__kdh]_VAzj0
+R2
+R0
+w1638500538
+8FSMWaveform.vwf.vt
+FFSMWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+!s108 1638500540.000000
+!s107 FSMWaveform.vwf.vt|
+!s90 -work|work|FSMWaveform.vwf.vt|
+!i113 1
+R4
+n@f@s@m_vlg_vec_tst
